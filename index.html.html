@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom</title>
+</head>
+
+<body>
+  <!-- <input type="text" placeholder="Enter names" />
+    <button id="add">Add Name</button>
+    <button id="print">Print Name</button>  -->
+  <!-- <p></p> -->
+
+
+
+
+
+  <button id="" class="">First</button> 
+  <button class="">g.k.kumar</button>
+    <button class="">g.k.kumar</button>
+    <button class="">g.k.kumar</button> 
+
+
+
+   <input type="text" placeholder="Enter your friend's name" />
+      <button id="add">Addd Name</button>
+      <button id="print">Print Name</button>
+
+      <p></p>
+
+    <script>
+
+         const names = [];
+
+        const btn = document.querySelector("#add")
+        const print = document.querySelector("#print")
+        const inp = document.querySelector("input")
+        const para = document.querySelector("p")  
+
+        btn.addEventListener("click", () => {
+          names.push(inp.value)
+          console.log(names)
+        })
+
+
+       print.addEventListener("click", () => {
+       para.innerHTML = names.reverse()
+       })
+
+       let gk =document.querySelector("button")
+       gk.forEach((o)=>{o.addEventListener("click", ()=>{console.log("g.k.s")})})
+
+        // let gk =document.querySelectorAll("button");
+        // gk.addEventListener("click", ()=>{console.log("girraj")})
+        // for(i=0; i<gk.length; i++){
+            // gk.addEventListener("click", function(r){console.log("r.innerHTML")})
+            
+      // gk.forEach((b) => {
+      //   b.addEventListener("click", function () {
+      //     console.log("Hello");
+      //   });
+      // });
+      // gk.forEach ((p)=>{p.addEventListener("click",()=>{console.log("girraj")})})
+      // console.log(a)
+      // }
+      
+      //   const btn = document.querySelector("button");
+      //   btn.addEventListener("click", function(){console.log("Rohit")})
+      // let sbtn = document.querySelectorAll("button");
+      // sbtn.forEach((h)=>{h.addEventListener("click",() =>{console.log("g.k.kumar")})})
+      // sbtn.addEventListener("click", ()=>{console.log("girraj yadav")})
+
+
+        // const names = [];
+
+        // const btn = document.querySelector("#add")
+        // const print = document.querySelector("#print")
+        // const inp = document.querySelector("input")
+        // const para = document.querySelector("p")
+
+        // btn.addEventListener("click", () => {
+        //     names.push(inp.value)
+        //     console.log(names)
+        // })
+
+
+        // print.addEventListener("click", () => {
+        //     console.log(
+        //         innerHTML = names.reverse())
+        // })
+
+    </script>
+</body>
+
+</html>
